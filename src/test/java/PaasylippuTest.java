@@ -19,24 +19,24 @@ public class PaasylippuTest {
 		LocalDateTime pvmEnd = pvmnow.plusDays(1);
 		lippuEraantyypvm = pvmEnd.format(DateTimeFormatter.ofPattern("dd-MM-yyyy 'Kello: ' HH:mm:ss"));
 	}
-
 	@Test
-	public void getLippuOstettupvmtest() {
-		paasylippu.getLippuEraantyypvm();
-		assertEquals(lippuOstettupvm,paasylippu.getLippuOstettupvm());
+	public void lippuOstettupvmTest() {
+		paasylippu.getLippuOstettupvm();
+		assertEquals(lippuOstettupvm, paasylippu.getLippuOstettupvm());
 
 	}
-
 	@Test
-	public void getLippuOstettupvm() {
-		paasylippu.getLippuOstettupvm();
+	public void lippuEraantyyTest() {
+		paasylippu.getLippuEraantyypvm();
 		assertEquals(lippuEraantyypvm, paasylippu.getLippuEraantyypvm());
 	}
-	@Test 
+	@Test
 	public void getNimiTest() {
 		paasylippu.getNimi();
 		assertEquals("Teatteri", paasylippu.getNimi());
-	}@Test
+	}
+
+	@Test
 	public void getHintaTest() {
 		paasylippu.getHinta();
 		assertEquals(30.0, paasylippu.getHinta(), 0.0001);
