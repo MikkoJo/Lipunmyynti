@@ -23,14 +23,14 @@ public class PaasylippuTest {
 	@Test
 	public void getLippuOstettupvmtest() {
 		paasylippu.getLippuEraantyypvm();
-		assertEquals("17-10-2019", lippuEraantyypvm);
+		assertEquals(lippuOstettupvm,paasylippu.getLippuOstettupvm());
 
 	}
 
 	@Test
 	public void getLippuOstettupvm() {
 		paasylippu.getLippuOstettupvm();
-		assertEquals("16-10-2019", lippuOstettupvm);
+		assertEquals(lippuEraantyypvm, paasylippu.getLippuEraantyypvm());
 	}
 	@Test 
 	public void getNimiTest() {
