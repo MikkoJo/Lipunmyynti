@@ -13,9 +13,9 @@ public class Paasylippu {
 		this.nimi = nimi;
 		this.hinta = hinta;
 		LocalDateTime pvmnow = LocalDateTime.now();
-		lippuOstettupvm = pvmnow.format(DateTimeFormatter.ofPattern("dd-MM-yyyy"));
+		lippuOstettupvm = pvmnow.format(DateTimeFormatter.ofPattern("dd-MM-yyyy 'Kello: ' HH:mm:ss"));
 		LocalDateTime pvmEnd = pvmnow.plusDays(1);
-		lippuEraantyypvm = pvmEnd.format(DateTimeFormatter.ofPattern("dd-MM-yyyy"));
+		lippuEraantyypvm = pvmEnd.format(DateTimeFormatter.ofPattern("dd-MM-yyyy 'Kello: ' HH:mm:ss"));
 	}
 
 	public double getHinta() {

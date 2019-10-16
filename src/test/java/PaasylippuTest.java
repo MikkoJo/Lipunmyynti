@@ -15,9 +15,9 @@ public class PaasylippuTest {
 	public void setUp() throws Exception {
 		paasylippu = new Paasylippu("Teatteri", 30);
 		LocalDateTime pvmnow = LocalDateTime.now();
-		lippuOstettupvm = pvmnow.format(DateTimeFormatter.ofPattern("dd-MM-yyyy"));
+		lippuOstettupvm = pvmnow.format(DateTimeFormatter.ofPattern("dd-MM-yyyy 'Kello: ' HH:mm:ss"));
 		LocalDateTime pvmEnd = pvmnow.plusDays(1);
-		lippuEraantyypvm = pvmEnd.format(DateTimeFormatter.ofPattern("dd-MM-yyyy"));
+		lippuEraantyypvm = pvmEnd.format(DateTimeFormatter.ofPattern("dd-MM-yyyy 'Kello: ' HH:mm:ss"));
 	}
 
 	@Test
