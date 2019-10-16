@@ -1,8 +1,8 @@
 import static org.junit.Assert.*;
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.Before;
 import org.junit.Test;
+
 
 public class ProfiiliTest {
 	Profiili profiili;
@@ -27,7 +27,7 @@ public class ProfiiliTest {
 	@Test
 	public void getAlennus() {
 		profiili.getAlennusProsentti();
-		assertEquals(0, profiili.getAlennusProsentti());
+		assertEquals(0, profiili.getAlennusProsentti(), 0.000001);
 	}
 	@Test
 	public void getAlennusOpiskelija() {
